@@ -1,6 +1,4 @@
-package com.example.pavel.umorili;
-
-import java.util.List;
+package com.example.pavel.githubClient;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

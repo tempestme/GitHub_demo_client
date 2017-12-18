@@ -1,4 +1,4 @@
-package com.example.pavel.umorili;
+package com.example.pavel.githubClient;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -15,13 +15,39 @@ public class User {
     String avatar_url;
     String company;
     String location;
+    String message;
 
-    public User(String login, String id, String avatar_url, String company, String location) {
+    {
+        login = "not found";
+        id = "not found";
+        avatar_url = "not found";
+        company = "not found";
+        location = "not found";
+        message = "not found";
+    }
+    public User(String login, String id, String avatar_url, String company, String location, String message) {
         this.login = login;
         this.id = id;
         this.avatar_url = avatar_url;
         this.company = company;
         this.location = location;
+//        if(message!=null){
+//            this.message=message;
+//        };
+    }
+
+    public boolean notFound(){
+        if(login==null){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public String getMessage() {
+        return message;
+
     }
 
     public String getLogin() {

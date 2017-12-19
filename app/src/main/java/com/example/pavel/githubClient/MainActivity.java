@@ -67,6 +67,13 @@ public class MainActivity extends AppCompatActivity {
 
                                 if(user == null){
                                     Toast.makeText(getApplicationContext(),"NOT FOUND",Toast.LENGTH_SHORT).show();
+                                    company.setText("nonononononono");
+                                    id.setText("id: not found");
+                                    location.setText("location: not found");
+                                    login.setText("not found");
+                                    Picasso.with(getApplicationContext()).load("http://s.quickmeme.com/img/a8/a8022006b463b5ed9be5a62f1bdbac43b4f3dbd5c6b3bb44707fe5f5e26635b0.jpg").into(avatar);
+
+
                                 }
                                 else{
                                     company.setText(user.getCompany());

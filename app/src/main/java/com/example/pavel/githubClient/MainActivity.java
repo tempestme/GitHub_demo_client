@@ -88,7 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
                             @Override
                             public void onFailure(Call<User> call, Throwable t) {
-
+                                Toast.makeText(getApplicationContext(),"CHECK YOUR CONNECTION",Toast.LENGTH_LONG).show();
+                                company.setText("");
+                                id.setText("");
+                                location.setText("");
+                                login.setText("CHECK CONNECTION");
 
                             }
                         });
